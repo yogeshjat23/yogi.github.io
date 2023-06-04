@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+    h1{
+        background: rgb(0, 100, 0);
+        color: #fff;
+        text-align: center;
+        font-style: italic;
+        word-spacing: 10px;
+        padding-top: 3px;
+        
+    }
+
+    body{
+        background-image: url(image/nursery.jpg);
+        background-size: cover;
+        background-position: center;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    .menu-bar{
+        background-color: rgb(0,100,0);
+        text-align: center;
+    }
+    .menu-bar ul {
+        display: inline-flex;
+        list-style: none;
+        color: #fff;
+    }
+    .menu-bar ul li {
+        width: 120px;
+        margin: 15px;
+        padding: 15px;
+    }
+    .menu-bar ul li a{
+        color: #fff;
+        text-decoration: none;
+        
+    }
+    .active, .menu-bar ul li:hover{
+        background: #2bab0b;
+        border-radius: 3px;
+    }
+    .submenu1 {
+        display:none;
+        padding-left: 0px;
+        
+    }
+    .menu-bar ul li:hover .submenu1{
+        display: block;
+        position: absolute;
+        
+      background: rgb(0, 100, 0);
+     border: solid white 3px;
+     margin-top: 15px;
+     
+    
+    
+        }
+        .menu-bar ul li:hover .submenu1 ul{
+            display: block;
+            margin: 10px;
+        }
+        .menu-bar ul li:hover .submenu1 ul li{
+            width: 50px;
+            padding: 10px;
+            border-bottom: 1px dotted #fff;
+            background: transparent;
+            border-radius: 0;
+            text-align: left;
+            
+        }
+        .menu-bar ul li:hover .submenu1 ul li:last-child{
+            border-bottom: none;
+        }
+        .menu-bar ul li:hover .submenu1 ul li a:hover{
+            color: #2bab0b;
+        }
+        .submenu2{
+            display: none;
+            border: solid white 3px;
+        }
+
+     .hover-me:hover .submenu2 {
+        display:block ;
+        position: absolute;
+        margin-top: -2px;
+        margin-left: 30px;
+        background: rgba(0, 100, 0);
+        
+     }
+     
